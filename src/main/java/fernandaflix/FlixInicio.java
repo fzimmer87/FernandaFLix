@@ -19,9 +19,6 @@ public abstract class FlixInicio {
         this.genero= genero;
         this.duracao = (float) duracao;
         this.classificacao =classificacao;
-
-
-
     }
 
     //metodo:

@@ -1,48 +1,45 @@
 package fernandaflix;
 
 public class Cliente {
-    private String nomeCliente;
-    private int idade;
+    //Atributos
+    private String nome;
     private String email;
     private String senha;
 
-    public void Cliente(String nomeCliente, int idade, String email) {
-        this.nomeCliente=nomeCliente;
-        this.idade=idade;
-        this.email=email;
-        this.senha=senha;
-
-    }
-
-    public void setNomeCliente(String nomeCliente) {
-        this.nomeCliente = nomeCliente;
-    }
-
-    public void setEmail(String email) {
+    public Cliente(String nome, String email, String senha) {
+        this.nome = nome;
         this.email = email;
+        this.senha = senha;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
+    public void setNomeCliente(String novoNome)
+    {
+        this.nome = novoNome;
     }
 
-    public String getSenha() {
-        return senha;
+    public void setEmail(String novoEmail)
+    {
+        this.email = novoEmail;
     }
 
-    public String getNomeCliente() {
-        return nomeCliente;
+    public void setSenha(String novaSenha)
+    {
+        this.senha = novaSenha;
     }
 
-    public int getIdade() {
-        return idade;
+    public String getNomeCliente()
+    {
+        return nome;
     }
 
-    public String getEmail() {
+
+    public String getEmail()
+    {
         return email;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public String getSenha()
+    {
+        return senha;
     }
 }
